@@ -36,7 +36,7 @@ a:hover {
 }
 body {
     background-color: var(--paleBlue) !important;
-    background-image: url(pattern-background-desktop.svg);
+    background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 -30%;
@@ -52,7 +52,8 @@ main {
 .plan {
     color: var(--darkBlue) !important;
     margin-left: -.5rem;
-    font-weight: 900 !important;
+    font-weight: 700 !important;
+    font-size: 1rem;
 }
 .price {
     color: var(--desaturatedBlue);
@@ -62,7 +63,7 @@ button {
     background-color: var(--brightBlue) !important;
     color: var(--paleBlue) !important;
     padding: .8rem !important;
-    box-shadow: 0rem 1rem 1rem .2rem rgb(240, 228, 240) !important;
+    box-shadow: 0rem 1rem 1rem .2rem rgb(229, 223, 229) !important;
     border-radius: .7rem !important;
     -webkit-border-radius: .7rem !important;
     -moz-border-radius: .7rem !important;
@@ -102,12 +103,33 @@ button:hover {
     color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
     body {
-        background-image: url(pattern-background-mobile.svg);
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    h2 {
+        font-size: 1.8rem !important;
+        margin-top: -1rem !important;
+        margin-bottom: 1rem !important;
     }
     main {
       width: 90% !important;
+    }
+    .responsive {
+        width: 80%;
+        margin: auto;
+    }
+    .plan-div {
+        width: 85%;
+        margin: 2rem auto;
+        padding: 1.5rem 0;
+    }
+    .btn-div {
+        width: 85%;
+        margin: auto;
+    }
+    .order {
+        padding-bottom: 1.5rem;
     }
     footer {
         display: none;
