@@ -36,7 +36,7 @@ a:hover {
 }
 body {
     background-color: var(--paleBlue) !important;
-    background-image: url(images/pattern-background-desktop.svg);
+    background-image: url(pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 -30%;
